@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Research Survey</title>
+    <meta name="description" content="Please take a few moments to compple this satisfaction survey.">
+    <h3>Market Research Survey</h6>
+    
+
+    <p>Please take a few moments to complete this satisfaction survey</p>
+</head>
+<ul>
+    <li type="none">
+        <label for="age">What is your age range?</label>
+        <div>
+        <select name="age" id="age">
+            <option value="">18-24</option>
+            <option value="">25-34</option>
+            <option value="">35-50</option>
+            <option value="">50+</option>
+        </select>
+        </div>
+    </li>
+    <li type="none">
+        <label for="income">What is your yearly income range?</label>
+        <div>
+        <select name="income" id="income">
+            <option value="">$0-$25,000</option>
+            <option value="">$25,001-$50,000</option>
+            <option value="">$50,001-$100,000</option>
+            <option value="">$100,000+</option>
+        </select>
+        </div>
+    </li>
+    <li type="none">
+        <fieldset>
+            <legend>Gender Identity</legend>
+            <div>
+                <span>
+                    <input id="field01" type="radio" value="male" tabindex="0" onchange="handleInput(this);handleRadioOther(this.name, false);" onmouseup="handleInput(this)">
+                    <label for="field01" class="choice">
+                        male
+                    </label>
+                </span>
+                <span>
+                    <input id="field02" type="radio" value="female" tabindex="0" onchange="handleInput(this);handleRadioOther(this.name, false);" onmouseup="handleInput(this)">
+                    <label for="field02" class="choice">
+                        female
+                    </label>
+                </span>
+                <span>
+                    <input id="field03" type="radio" value="Nonbinary" tabindex="0" onchange="handleInput(this);handleRadioOther(this.name, false);" onmouseup="handleInput(this)">
+                    <label for="field03" class="choice">
+                        Nonbinary
+                    </label>
+                </span>
+                <span>
+                    <input id="field04" type="radio" value="Other" tabindex="0" onchange="handleInput(this);handleRadioOther(this.name, false);" onmouseup="handleInput(this)">
+                    <label for="field04" class="choice" onmouseup="document.getElementById(field04_other).focus();">
+                        Other
+                    </label>
+                    <input type="text" name="field04_other class="field text other" value maxlength="250" onclick="document.getElementById(field04).checked ='checked';handleRadioOther(field04,true);"onkeyup="handleInput(this);tabidex="0">
+                    <label for="field04_otherlabel" class="other"></label>
+                </span>
+            </div>
+        </fieldset>
+    </li>
+    <li type="none">
+        <label for="">Which of the following products have you purchased in the last 2 months. please check all that apply.</label>
+        <div>
+        <input type="checkbox" name="product1" ><label for="product1">Product 1</label>
+        <input type="checkbox" name="product2"><label for="product2">Product 2</label>
+        <input type="checkbox" name="product3"><label for="product3">Product 3</label>
+        </div>
+        
+    </li>
+    <li type="none">
+        <label for="times">How often would you use our new product?</label>
+        <div>
+        <input type="radio" name="daily"><label for="daily">Daily</label>
+        <input type="radio" name="weekly"><label for="weekly">Weekly</label>
+        <input type="radio" name="Monthly"><label for="monthly">Monthly</label>
+        </div>
+    </li>
+    <li type="none">
+        <label for="money">What would you pay for the new product</label>
+        <div>
+            <label for="$">$</label><input type="number" name="$">.
+        </div>
+    </li>
+    <li type="none">
+        <label for="features">What features would you like to see in the new product.</label>
+        <div>
+       <textarea name="" id="" cols="50px" rows="50px"></textarea>
+        </div>
+    </li>
+    <li type="none">
+        <label for="rate">Please rate your level of agreement withe the following statements</label>
+        <div>
+       <table>
+        <tr>
+            <td></td>
+            <td>Strongly Disagree</td>
+            <td>Disagree</td>
+            <td>Agree</td>
+            <td>Strongly Agree</td>
+        </tr>
+        <tr>
+            <td><b>Our products are priced fairly</b></td>
+            <td><input type="checkbox"><br>1</td>
+            <td><input type="checkbox"><br>2</td>
+            <td><input type="checkbox"><br>3</td>
+            <td><input type="checkbox"><br>4</td>
+        </tr>
+        <tr>
+            <td><b>Our products are high quality</b></td>
+            <td><input type="checkbox"><br>1</td>
+            <td><input type="checkbox"><br>2</td>
+            <td><input type="checkbox"><br>3</td>
+            <td><input type="checkbox"><br>4</td>
+        </tr>
+        <tr>
+            <td><b>You would recommend our product to a friend or coworker</b></td>
+            <td><input type="checkbox"><br>1</td>
+            <td><input type="checkbox"><br>2</td>
+            <td><input type="checkbox"><br>3</td>
+            <td><input type="checkbox"><br>4</td>
+        </tr>
+       
+    </div> </li>
+</ul>
+<body>
+    
+</body
+</html>
